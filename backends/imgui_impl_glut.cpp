@@ -38,11 +38,7 @@
 #ifndef IMGUI_DISABLE
 #include "imgui_impl_glut.h"
 #define GL_SILENCE_DEPRECATION
-#ifdef __APPLE__
-#include <GLUT/glut.h>
-#else
-#include <GL/freeglut.h>
-#endif
+#include <GL/glut.h>
 
 #ifdef _MSC_VER
 #pragma warning (disable: 4505) // unreferenced local function has been removed (stb stuff)
